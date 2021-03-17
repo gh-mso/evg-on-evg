@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='width=device-width, user-scalable=no' name='viewport'>
+<meta content='noindex' name='robots'>
+<title>Evergage 1.5-Minute Intro Video</title>
+<script src='//fast.wistia.com/assets/external/E-v1.js'></script>
+<script>
+  (function(W) {
+    var Obj = W.lib('utilities/obj');
+    var { Url, queryParamsToObject } = W.lib('utilities/url');
+  
+  
+    function translateKeys(hash, dict) {
+      var key;
+      for (key in hash) {
+        if (hash.hasOwnProperty(key)) {
+          if (dict[key] !== undefined) {
+            hash[dict[key]] = hash[key];
+          }
+        }
+      }
+    }
+    window.onload = function() {
+      setTimeout(function() {
+        var url, anchorParams, rtrue, embedOptions, playerColor;
+        url = Url.parse(window.location.href);
+        translateKeys(url.params, {
+          autoplay: "autoPlay",
+          playbutton: "playButton",
+          controls_visible: "controlsVisibleOnLoad",
+          end_video_behavior: "endVideoBehavior"
+        });
+        anchorParams = queryParamsToObject(url.anchor || "");
+        rtrue = /true|1|yes/i;
+        embedOptions = Obj.merge({}, url.params);
+        embedOptions.container = "wistia_video";
+        playerColor = "" + (embedOptions.playerColor || "");
+        Obj.castDeep(embedOptions);
+        embedOptions.playerColor = "" + (playerColor || "");
+        W.embed({"assets":[{"type":"original","slug":"original","display_name":"Original file","details":{},"width":1920,"height":1080,"size":101816852,"bitrate":9080,"public":true,"status":2,"progress":1.0,"url":"https://embed-ssl.wistia.com/deliveries/d314b3e62c6a30c342dc8a9eabab3fbf.bin","created_at":1584659839},{"type":"iphone_video","slug":"mp4_h264_396k","display_name":"360p","details":{},"container":"mp4","codec":"h264","width":640,"height":360,"ext":"mp4","size":4438614,"bitrate":396,"public":true,"status":2,"progress":1.0,"metadata":{"max_bitrate":68585,"early_max_bitrate":50894,"average_bitrate":50669},"url":"https://embed-ssl.wistia.com/deliveries/19b96e1187cf18f0bed36d0493ce5f0dd0514e2d.bin","created_at":1584659839,"segment_duration":3,"opt_vbitrate":1200},{"type":"mp4_video","slug":"mp4_h264_267k","display_name":"224p","details":{},"container":"mp4","codec":"h264","width":400,"height":224,"ext":"mp4","size":3001119,"bitrate":267,"public":true,"status":2,"progress":1.0,"metadata":{"max_bitrate":44882,"early_max_bitrate":33384,"average_bitrate":34259},"url":"https://embed-ssl.wistia.com/deliveries/0eee86c2f6916ae6a60f3cf004530afa380821dc.bin","created_at":1584659839,"segment_duration":3,"opt_vbitrate":300},{"type":"md_mp4_video","slug":"mp4_h264_618k","display_name":"540p","details":{},"container":"mp4","codec":"h264","width":960,"height":540,"ext":"mp4","size":6935109,"bitrate":618,"public":true,"status":2,"progress":1.0,"metadata":{"max_bitrate":114744,"early_max_bitrate":83753,"average_bitrate":79168},"url":"https://embed-ssl.wistia.com/deliveries/7296a801bd437452f1f0d44afbd2b50f99f66a4e.bin","created_at":1584659839,"segment_duration":3,"opt_vbitrate":1800},{"type":"hd_mp4_video","slug":"mp4_h264_903k","display_name":"720p","details":{},"container":"mp4","codec":"h264","width":1280,"height":720,"ext":"mp4","size":10121901,"bitrate":903,"public":true,"status":2,"progress":1.0,"metadata":{"max_bitrate":172251,"early_max_bitrate":122317,"average_bitrate":115548},"url":"https://embed-ssl.wistia.com/deliveries/c42d41180479b7df4b659e8cc8cf20b9ef1ca8ec.bin","created_at":1584659839,"segment_duration":3,"opt_vbitrate":3750},{"type":"hd_mp4_video","slug":"mp4_h264_1890k","display_name":"1080p","details":{},"container":"mp4","codec":"h264","width":1920,"height":1080,"ext":"mp4","size":21178239,"bitrate":1890,"public":true,"status":2,"progress":1.0,"metadata":{"max_bitrate":306950,"early_max_bitrate":266334,"average_bitrate":241763},"url":"https://embed-ssl.wistia.com/deliveries/9ec3756181edb3b42a712c2f703b367bb7773fd8.bin","created_at":1584659839,"segment_duration":3,"opt_vbitrate":5625},{"type":"storyboard","slug":"storyboard_2000x2034","display_name":"Storyboard","details":{},"width":2000,"height":2034,"ext":"jpg","size":561255,"bitrate":0,"public":true,"status":2,"progress":1.0,"metadata":{"frame_width":200,"frame_height":113,"frame_count":175,"aspect_ratio":1.7777777777777777},"url":"https://embed-ssl.wistia.com/deliveries/d07e016e8f9f800e85d04f0aeb07a8cb2fab8f50.bin","created_at":1584659839},{"type":"still_image","slug":"still_image_1024x576","display_name":"Image","details":{},"width":1024,"height":576,"size":307328,"bitrate":0,"public":true,"status":2,"progress":1.0,"url":"https://embed-ssl.wistia.com/deliveries/6af766193fa036dac6820e775f3e2648.bin","created_at":1584659839}],"distilleryUrl":"https://distillery.wistia.com/x","accountKey":"wistia-production_37341","mediaKey":"wistia-production_12208609","type":"Video","mediaType":"Video","progress":1.0,"status":2,"name":"Evergage 1.5-Minute Intro Video","duration":87.542,"hashedId":"ctbc0o12by","branding":false,"enableCustomerLogo":true,"seoDescription":"Short, fun animated Evergage intro video presents the high-level benefits of using Evergage’s real-time personalization platform to deliver relevant customer experiences across channels. ","preloadPreference":null,"flashPlayerUrl":"https://embed-ssl.wistia.com/flash/embed_player_v2.0.swf?2017-04-20","showAbout":true,"createdAt":1419272631,"firstEmbedForAccount":false,"firstShareForAccount":false,"useMediaDataHostLogic":true,"projectId":745573,"stats":{"loadCount":16021,"playCount":13104,"uniqueLoadCount":14204,"uniquePlayCount":12463,"averageEngagement":0.729849},"trackingTransmitInterval":20,"integrations":{"google_analytics":true},"hls_enabled":true,"embed_options":{"volumeControl":"true","fullscreenButton":"true","controlsVisibleOnLoad":"true","playerColor":"54bbff","bpbTime":"false","plugin":{"postRoll-v1":{"rewatch":"false","text":"","link":"http://www.evergage.com/demo/?introvid","time":"end","autoSize":"true","style":{"backgroundColor":"#303030"},"image":"https://embed-ssl.wistia.com/deliveries/48aa4725c86099141f41aca3af6acd10.png","conversionOpportunityKey":"wistia-production_1856880","ctaType":"image","on":"true"},"share":{"channels":"embed-email-facebook-twitter-linkedIn","pageTitle":"Evergage 1.5-Minute Intro Video","pageUrl":"https://apptegic.wistia.com/medias/ctbc0o12by","tweetText":"{video_name}","overrideUrl":"false","on":"true","conversionOpportunityKey":"wistia-production_3361639"}},"vulcan":"true","videoQuality":"","branding":"false","showCustomerLogo":"true","unalteredStillImageAsset":{"url":"https://embed-ssl.wistia.com/deliveries/6af766193fa036dac6820e775f3e2648.png","width":"1024","height":"576"},"autoPlay":"false","endVideoBehavior":"default","playButton":"true","smallPlayButton":"true","playbar":"true","settingsControl":"true","playbackRateControl":"true","qualityControl":"true","spherical":"false","playsinline":true}}, embedOptions);
+      }, 1);
+    };
+  }(Wistia));
+</script>
+<style>
+  html, body {margin:0;padding:0;overflow:hidden;height:100%;}
+  object {border:0;}
+  #wistia_video {height:100%;width:100%;}
+</style>
+</head>
+<body>
+<div id='wistia_video'></div>
+</body>
+</html>
