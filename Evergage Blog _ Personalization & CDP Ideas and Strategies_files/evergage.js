@@ -6031,6 +6031,8 @@ var Evergage = (function (exports) {
       return;
     }
 
+    sitemapState.result.currentPage = null;
+
     if (!validatePageConfigs(siteMapConfig)) {
       return;
     }
